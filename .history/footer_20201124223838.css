@@ -1,0 +1,16 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: ;
+}
+footer {
+    margin: 2em 5% 0;
+}
+.footer_top,
+.top_left,
+. {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+}
