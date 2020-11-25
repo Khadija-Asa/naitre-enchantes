@@ -28,7 +28,6 @@ footer {
     align-items: center;
     list-style: none;
     width: 35%;
-    min-width: 25em;
 }
 
 .footer_bottom {
@@ -43,30 +42,21 @@ footer {
     justify-content: space-around;
     flex-wrap: wrap;
     align-items: center;
-    margin: 1.5em auto 4em;
-    min-width: 20em;
+    margin: 1.5em auto 3.5em;
 }
 .footer_bottom li a {
     color: black;
     text-decoration: none;
 }
-.bottom_left {
-    line-height: 1.5em;
-}
+
 .bottom_middle {
     width: 22%;
 }
 .bottom_middle p {
     font-size: .8em;
     text-align: center;
-    min-width: 15em;
 }
 
 b {
     font-size: 1.5em;
-}
-@media screen and (max-width: 920px){
-    footer {
-        text-align: center;
-    } 
 }

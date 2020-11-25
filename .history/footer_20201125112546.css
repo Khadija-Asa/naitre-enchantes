@@ -66,7 +66,5 @@ b {
     font-size: 1.5em;
 }
 @media screen and (max-width: 920px){
-    footer {
-        text-align: center;
-    } 
+    footer:
 }
