@@ -19,3 +19,6 @@ Route::get('/', function () {
 */
 
 Route::get('/app', 'HomeController@index');
+
+Route::get('/', 'HomePageController@index')->name('home-page');
+
