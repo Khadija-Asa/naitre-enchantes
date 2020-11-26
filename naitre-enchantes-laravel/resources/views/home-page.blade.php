@@ -7,14 +7,39 @@
   <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="{{ asset('css/footer.css') }}">
   <link rel="stylesheet" href="{{ asset('css/home-page.css') }}">
+  <link rel="stylesheet" href="{{ asset('css/header.css') }}">
   <title>Naître Enchantés</title>
 </head>
 <body>
-
-  
-
-
-  <h1>NAITRE ENCHANTES</h1>
+  <header>
+    <div class="logo_titre">
+        <img src="../img/logo-naitre-enchantes-small.png" alt="logo" class="logo">
+        <h1>NAITRE ENCHANTES</h1>
+    </div>
+    <ul class="nav">
+         <li class="nav_element"><a href="">HOME</a></li>
+         <li class="nav_element"><a href="">NOTRE ENGAGEMENT</a></li>
+         <li class="nav_element"><a href="">Blog</a></li>
+         <li class="nav_element"><a href="">PARENTS</a></li>
+         <li class="nav_element"><a href="">PROFESSIONNELS</a></li>
+         <li class="nav_element"><a href="">Boutique</a></li>
+         <li class="nav_element"><a href="">contact</a></li>
+    </ul>
+   <div class="nav_portable">
+    <button class="ham"></button>
+    <nav class="navbar">
+      <ul>
+        <li><a class="menuLink" href="#">Home</a></li>
+        <li><a class="menuLink" href="#">NOTRE ENGAGEMENT</a></li>
+        <li><a class="menuLink" href="#">Blog</a></li>
+        <li><a class="menuLink" href="#">PARENTS</a></li>
+        <li><a class="menuLink" href="#">PROFESSIONNELS</a></li>
+        <li><a class="menuLink" href="#">Boutique</a></li>
+        <li><a class="menuLink" href="#">contact</a></li>
+      </ul>
+    </nav>
+   </div>
+  </header>
   <div class="container_colored_blocks">
     <div class="main_colored_block">
       <h2 class="parents">PARENTS</h2>
@@ -24,7 +49,7 @@
     <div class="secundary_colored_block">
       <div class="professional_block">
         <h2 class="professionals">PROFESSIONNELS</h2>
-        <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+        <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p><link rel="stylesheet" href="{{ asset('css/home-page.css') }}">
         <a href="#">VOIR PLUS</a>
       </div>
       <div class="maternity_block">
@@ -42,7 +67,7 @@
       <a href="#">VOIR PLUS</a>
     </div>
     <div class="magali">
-      <img src="../img/trees.jpeg" alt="arbres" class="trees">
+      <img src="{{ asset ('img/trees.jpeg')}}" alt="arbres" class="trees">
       <h4>Magali Dieux</h4>
       <p>coach en développement personnel.</p>
       <a href="#">REJOIGNEZ-NOUS</a>
@@ -51,7 +76,7 @@
   <h2>Accoucher dans la joie même avec la pandémie </h2>
   <div class="joy">
     <div class="video">
-      <iframe src="https://youtu.be/wqJ45dLov4c" title="Présentation de l'accompagnement 'spécial COVID 19'"></iframe>
+      <iframe src="https://youtu.be/wqJ45dLov4c" title="Présentation de l'accompagnement 'spécial COVID 19'">Présentation de l'accompagnement 'spécial COVID 19'</iframe>
     </div>
     <div class="covid">
       <div>
@@ -142,7 +167,7 @@
       <p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem.</p>
     </div>
     <div class="picture_book">
-      <img src="../img/livre.png" alt="couverture du livre: pour une grossesse et une naissance heureuses">
+      <img src="{{asset ('img/livre.png')}}" alt="couverture du livre: pour une grossesse et une naissance heureuses">
     </div>
   </div>
   <div class="espace"></div>
@@ -186,5 +211,6 @@
             </div>
         </div>
     </footer>
+    <script type="text/javascript" src="{{ asset ('js/header.js')}}"></script> 
 </body>
 </html>
