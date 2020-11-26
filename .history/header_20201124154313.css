@@ -1,0 +1,47 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: ;
+}
+
+h1 {
+    margin-right: 35%;
+    font-size: 2em;
+    font-style: italic;
+}
+.logo_titre {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    text-align: end;
+    margin: 1.5em 15%;
+    text-transform: uppercase;
+    
+}
+.nav_element {
+    list-style: none;
+    margin-left: 1;
+}
+.nav_element a {
+    color: black;
+    text-decoration: none;
+}
+
+.big_img_header {
+    background-color: #F16F76;
+    height: 20em;
+}
+.in_big_img {
+    text-align: center;
+    color: blanchedalmond;
+    font-size:3.5em ;
+    font-style: ;
+    padding-top: 2em;
+}
