@@ -15,27 +15,26 @@
   <table>
     <tr>
       <th>Name</th>
+
       {{-- <th>Address</th>
       <th>Post Code</th>
       <th>City</th>
       <th>Revenue</th> --}}
       <th>Description</th>
       <th>Prix</th>
-                  </tr>
-   
+    </tr>
+                
+    @foreach($products as $product)
     <tr>
-    <td>{{ $product ?? '' }}</td>
-      {{-- <td>{{$company->address}}</td>
-      <td>{{$company->post_code}}</td>
-      <td>{{$company->city}}</td>
-      <td>{{$company->revenue}}</td> --}}
+    <td>{{ $product->name}}</td>
       <td>
-        {{ $product ?? '' }}
+        {{ $product->description}}
       </td>
       <td>
-        {{ $product ?? '' }}
+        {{ $product->price}}
       </td>
     </tr>
+    @endforeach
     </table>    
  <div>
     <td>
