@@ -18,4 +18,10 @@ use \App\Products;
 //     return view('welcome');
 // });
 
-Route::get('/product', 'ProductsController@index');
+Route::get('/product', 'ProductsController@index')->name('product');
+Route::get('/customer', 'ProductsController@index');
+Route::get('/cartproduct', 'ProductsController@index');
+Route::get('/cart', 'ProductsController@index');
+
+Route::get('/createproduct','ProductsController@create')->name('create_product');
+Route::post('/storeproduct','ProductsController@store')->name('store_product');
