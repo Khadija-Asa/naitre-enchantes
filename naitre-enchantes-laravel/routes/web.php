@@ -13,6 +13,16 @@ use \App\Products;
 | contains the "web" middleware group. Now create something great!
 |
 */
+/*
+Route::get('/', function () {
+    return view('welcome');
+});
+*/
+
+Route::get('/app', 'HomeController@index');
+
+Route::get('/', 'HomePageController@index')->name('home-page');
+
 
 // Route::get('/', function () {
 //     return view('welcome');

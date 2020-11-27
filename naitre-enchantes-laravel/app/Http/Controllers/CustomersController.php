@@ -8,30 +8,30 @@ use App\Customer;
 class CustomersController extends Controller
 {
     public function index() {
-        $product = Customer::all();
+        $customer = Customer::all();
         return view('customer', ['customers' => $customer]);
     }
     public function show($id) {
-        $product = Customer::all()->find($id);
+        $customer = Customer::all()->find($id);
         return view('showCustomer', ['customer' => $customer]);
     }
     public function edit($id) {
-        $product = Customer::all()->find($id);
+        $customer = Customer::all()->find($id);
         return view('editCustomer', ['customer' => $customer]);
     }
     public function update(Request $request, $id) {
-        $product = Customer::all()->find($id);
-        $product->fill($request->all());
-        $product->save();
+        $customer = Customer::all()->find($id);
+        $customer->fill($request->all());
+        $customer->save();
         return redirect()->route('customer');
     }
 public function create() {
     return view('createCustomer');
     }
     public function store(Request $request) {
-        $company = new Customer([
-        'name'=> $request->get('name'),
+        $customer = new Customer([
         'surname'=> $request->get('surname'),
+        'name'=> $request->get('name'),
         'company_name'=> $request->get('company_name'),
         'address'=> $request->get('address'),
         'entrance'=> $request->get('entrance'),
@@ -40,7 +40,7 @@ public function create() {
         'phone_number'=> $request->get('phone_number'),
         'email'=> $request->get('email'),
     ]);
-        $company->save();
-        return redirect()->route('product');
+        $customer->save();
+        return redirect()->route('customer');
     }
 }
